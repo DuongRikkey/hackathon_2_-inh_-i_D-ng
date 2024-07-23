@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Manager Product</title>
+        <!-- Bootstrap Styles-->
+        <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+        <!-- FontAwesome Styles-->
+        <link href="../assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- Custom Styles-->
+        <link href="../assets/css/custom-styles.css" rel="stylesheet" />
+        <!-- Google Fonts-->
+        <link
+          href="http://fonts.googleapis.com/css?family=Open+Sans"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <link rel="stylesheet" href="./duan.css" />
+        <style></style>
+      </head>
+
+      <body>
+        <div id="wrapper">
+          <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle"
+                data-toggle="collapse"
+                data-target=".sidebar-collapse"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Dream</a>
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right">
+              <li class="dropdown">
+                <a
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  href="#"
+                  aria-expanded="false"
+                  ><span style="color: yellow">Đinh Đại Dương</span>
+                  <img
+                    style="width: 30px; height: 30px; border-radius: 50%"
+                    src="https://tmssl.akamaized.net/images/foto/galerie/ronaldo-cristiano-2017-real-madrid-ballon-d-or-2016-0026751808hjpg-1698686328-120749.jpg?lm=1698686338"
+                    alt=""
+                  />
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-user fa-fw"></i> User Profile</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                  </li>
+                </ul>
+                <!-- /.dropdown-user -->
+              </li>
+              <!-- /.dropdown -->
+            </ul>
+          </nav>
+          <!--/. NAV TOP  -->
+          <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+              <ul class="nav" id="main-menu">
+                <li>
+                  <a href="../manage-skills/skill.html">Kỹ năng </a>
+                </li>
+                <li>
+                  <a style="background-color: palevioletred" href="duan.html">
+                    <span>Dự án</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- /. NAV SIDE  -->
+          <div id="page-wrapper">
+            <div id="page-inner">
+              <div class="row">
+                <div class="col-md-12"></div>
+              </div>
+              <!-- ngay day -->
+              <!-- bảng, form thêm, tìm kiếm<input>, sắp xếp<select-option> -->
+
+              <section class="container-product">
+                <div class="container-first">
+                  <p>Kỹ năng</p>
+                  <button
+                    style="background-color: #2762e5"
+                    type="button"
+                    class="create-btn"
+                  >
+                    Thêm kỹ mới năng
+                  </button>
+                </div>
+
+                <table>
+                  <thead>
+                    <tr id="list-newp">
+                      <th>STT</th>
+                      <th>Tên dự án</th>
+                      <th>Hình ảnh</th>
+                      <th>Công nghệ</th>
+                      <th>Chức năng</th>
+                    </tr>
+                  </thead>
+                  <tbody class="list-category">
+                    <tr>
+                      <td>1</td>
+                      <td>Reajs</td>
+                      <td>
+                        <img
+                          width="60px"
+                          height="85px"
+                          src="https://tmssl.akamaized.net/images/foto/galerie/ronaldo-cristiano-2017-real-madrid-ballon-d-or-2016-0026751808hjpg-1698686328-120749.jpg?lm=1698686338"
+                          alt=""
+                        />
+                      </td>
+                      <td>Công nghệ</td>
+                      <td class="actions">
+                        <button type="button" class="creat-btn">Sửa</button>
+                        <button type="button" class="delete-btn">Xóa</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div id="overlay">
+          <div id="newproduct">
+            <form action="">
+              <div class="title-over">
+                <h2 id="text-total">Thêm dự án mới</h2>
+                <i id="noneover" class="fa-solid fa-x"></i>
+              </div>
+
+              <div class="form-input">
+                <label for="">Tên dự án</label> <br />
+                <input id="namesprojectinput" type="text" />
+                <p id="error1"></p>
+              </div>
+              <div class="form-input">
+                <label for="">Hình ảnh</label> <br />
+                <input id="imginput" type="text" />
+                <p id="error2"></p>
+              </div>
+              <div class="form-input">
+                <label for="">Công nghệ sử dụng</label> <br />
+                <input id="techinput" type="text" />
+                <p id="error3"></p>
+              </div>
+              <div class="form-input">
+                <label for="">Link github</label> <br />
+                <input id="linkinput" type="text" />
+                <p id="error4"></p>
+              </div>
+              <div class="form-input">
+                <label for="">Mô tả</label> <br />
+                <textarea name="" id="desinput"></textarea>
+                <p id="error5"></p>
+              </div>
+
+              <div class="button">
+                <button class="cancel" id="cancel" type="button">Hủy</button>
+                <button class="create" id="crate" type="button">Thêm</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </body>
+      <script src="./duan.js"></script>
+      <script
+        src="https://kit.fontawesome.com/d214b8e9b3.js"
+        crossorigin="anonymous"
+      ></script>
+    </html>
+  </body>
+</html>
